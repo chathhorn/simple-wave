@@ -2,7 +2,7 @@ I originally wrote this here .wav file parser as a basis for a series of
 exercises in an introductory programming class. I now bequeath it to you,
 Public Domain. It's free to use/modify/copy/etc. with no restrictions.
 
-Chris Hathhorn, hathhorn@gmail.com
+Chris Hathhorn, chathhorn@gmail.com
 
 *** wave.h ***
 
