@@ -1,6 +1,4 @@
-I originally wrote this here .wav file parser as a basis for a series of
-exercises in an introductory programming class. I now bequeath it to you,
-Public Domain. It's free to use/modify/copy/etc. with no restrictions.
+This is an MS Wave file parser intended for pedagogical purposes.
 
 Chris Hathhorn, chathhorn@gmail.com
 
