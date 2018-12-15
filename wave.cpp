@@ -1,9 +1,5 @@
 // This file contains various example Wave-file manipulation functions using
 // the wave.h API with a simple, interactive user interface.
-//
-// This is free software to copy, use, modify, etc. with no conditions.
-// Questions? Comments? Email me: Chris Hathhorn, chathhorn@gmail.com
-//
 
 #include "wave.h"
 #include <string>
