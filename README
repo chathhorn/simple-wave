@@ -1,13 +1,15 @@
 This is an MS Wave file parser intended for pedagogical purposes.
 
-Chris Hathhorn, chathhorn@gmail.com
+Chris Hathhorn (Fall 2011)
 
-*** wave.h ***
+# `wave.h` 
 
 This file provides an API with limited support for reading and writing MS Wave
 (.wav) files. See the "Wave" class below for details. 
 
-The Wave class public interface:
+## The Wave class public interface
+
+```c++
       /*** Public Data ***/
       // These objects represent the contents of this Wave file.
       RiffChunk riff_chunk;
@@ -48,8 +50,10 @@ The Wave class public interface:
 
       // Print diagnostic info about this Wave file.
       friend std::ostream& operator<<(std::ostream& stream, Wave const& wave);
+```
 
 Example usage:
+```c++
      Wave wave;
      wave.Load(filename);
 
@@ -68,20 +72,19 @@ Example usage:
      }
 
      wave.Save(filename);
+```
 
-*** wave.cpp ***
+# `wave.cpp`
 
 This file contains various example Wave-file manipulation functions using the
 wave.h API with a simple, interactive user interface. 
 
 Example functions:
-      faster -- Speed it up by dropping every other sample.
-      slower -- Slow it down by duplicating every other sample.
-      echo -- Create an echo effect by adding samples back in after a delay.
-      amp_up -- Increase the volume (amplitude) by 20%.
-      amp_down -- Decrease the volume (amplitude) by 20%.
-      reverse -- Reverse.
-      mix -- Mix two WAVs together. The new file should be as long as the
-      longest operand file. The shorter file gets looped.
-
-
+  * `faster` -- Speed it up by dropping every other sample.
+  * `slower` -- Slow it down by duplicating every other sample.
+  * `echo` -- Create an echo effect by adding samples back in after a delay.
+  * `amp_up` -- Increase the volume (amplitude) by 20%.
+  * `amp_down` -- Decrease the volume (amplitude) by 20%.
+  * `reverse` -- Reverse.
+  * `mix` -- Mix two WAVs together. The new file should be as long as the
+           longest operand file. The shorter file gets looped.
